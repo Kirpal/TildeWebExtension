@@ -89,7 +89,7 @@ const CONFIG = {
 
 function saveOptions(e) {
     e.preventDefault();
-    browser.storage.local.set({
+    chrome.storage.local.set({
         config: (document.querySelector("#config").value.length > 0) ? Object.assign(CONFIG, JSON.parse(document.querySelector("#config").value)) : CONFIG
     }, () => {
         restoreOptions();
@@ -115,7 +115,7 @@ function restoreOptions() {
         console.log(`Error: ${error}`);
     }
 
-    var getting = browser.storage.local.get("config");
+    var getting = chrome.storage.local.get("config");
     getting.then(setCurrentChoice, onError);
 }
 

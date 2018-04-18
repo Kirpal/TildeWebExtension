@@ -715,7 +715,7 @@ const $ = {
     }
   }
 
-  let gettingConfig = browser.storage.local.get('config', ({config: CONFIG}) => {
+  let gettingConfig = chrome.storage.local.get('config', ({config: CONFIG}) => {
     CONFIG = Object.assign(DEFAULT_CONFIG, CONFIG);
 
     const getHelp = () => {
