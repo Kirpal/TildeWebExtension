@@ -53,11 +53,6 @@ Then copy the JSON from the textarea into this extension's Preferences panel.
 
 ## License
 
-Feel free to use this and modify it however you like.
-
-License
--------
-
 This project is licensed under the **MIT License**, see [LICENSE](LICENSE) for details.
 
 
