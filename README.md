@@ -1,5 +1,7 @@
 # Tilde - WebExtension
 
+## Forked from [Tilde](https://github.com/cadejscroggins/tilde) by [Cade Scroggins](https://github.com/cadejscroggins)
+
 Inspired by [/r/startpages](https://www.reddit.com/r/startpages)—the idea is to have a homepage for your browser that is functional and sexy.
 
 ![Screenshot](SCREENSHOT.png?raw=true "Screenshot")
