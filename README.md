@@ -1,6 +1,6 @@
 # Tilde - WebExtension
 
-## Forked from [Tilde](https://github.com/cadejscroggins/tilde) by [Cade Scroggins](https://github.com/cadejscroggins)
+#### Based on [Tilde](https://github.com/cadejscroggins/tilde) by [Cade Scroggins](https://github.com/cadejscroggins) and [HumbleNewTabPage](https://github.com/quodroc/HumbleNewTabPage) by [Isaiah Billingsley](https://github.com/quodroc)
 
 Inspired by [/r/startpages](https://www.reddit.com/r/startpages)—the idea is to have a homepage for your browser that is functional and sexy.
 
