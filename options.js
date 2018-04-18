@@ -111,12 +111,7 @@ function restoreOptions() {
         document.querySelector("#config").value = serialize(result.config || CONFIG);
     }
 
-    function onError(error) {
-        console.log(`Error: ${error}`);
-    }
-
-    var getting = chrome.storage.local.get("config");
-    getting.then(setCurrentChoice, onError);
+    chrome.storage.local.get("config", setCurrentChoice);
 }
 
 document.addEventListener("DOMContentLoaded", restoreOptions);
