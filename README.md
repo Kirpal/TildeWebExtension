@@ -6,9 +6,7 @@ Inspired by [/r/startpages](https://www.reddit.com/r/startpages)—the idea is t
 
 ![Screenshot](SCREENSHOT.png?raw=true "Screenshot")
 
-[Download for Chrome]()
-
-[Download for Firefox]()
+[Download for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tilde/)
 
 ## Usage
 
