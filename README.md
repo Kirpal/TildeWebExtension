@@ -1,153 +1,63 @@
-Humble New Tab Page
-===================
+# Tilde Browser Extension
 
-Redesigned new tab page featuring your bookmarks, apps, most visited, recently closed, and weather in a custom layout.
+Inspired by [/r/startpages](https://www.reddit.com/r/startpages)—the idea is to have a homepage for your browser that is functional and sexy.
 
-![](media/shot.1.png)
+![Screenshot](SCREENSHOT.png?raw=true "Screenshot")
 
-### Features
+[Download for Chrome]()
 
-- Simple, clean design
-- Highly customizable
-- Fast loading and lightweight
+[Download for Firefox]()
 
-[Download for Chrome](https://chrome.google.com/webstore/detail/mfgdmpfihlmdekaclngibpjhdebndhdj)
+## Usage
 
-[Download for Firefox](https://addons.mozilla.org/en-US/firefox/addon/humble-new-tab/)
+To go to a site, enter the corresponding key. To view the available sites and their keys, press `?`. If your input doesn't match any of the commands, a generic Google search will be triggered. For example:
 
-This extension replaces the default new tab page. Drag and drop folders to create new columns or reorder them. The font, colors, spacing, and more can be customized from the options menu.
+* Entering `r` would redirect you to [www.reddit.com](https://www.reddit.com).
+* Entering `t` would redirect you to [twitter.com](https://twitter.com).
+* Entering `cats` would search [Google for cats](https://encrypted.google.com/search?q=cats).
 
+On mobile, you can click the clock to focus the search input.
 
-Screenshots
------------
-![](media/shot.2.png)
-![](media/shot.3.png)
-![](media/shot.4.png)
-![](media/shot.5.png)
+### Searching
 
+You can search any of the sites by typing a colon after the site's key, followed by your search query. For example:
+
+* Entering `g:tilde` would search [GitHub for tilde](https://github.com/search?q=tilde).
+* Entering `s:radiohead` would search [SoundCloud for radiohead](https://soundcloud.com/search?q=radiohead).
+
+### Specific Locations
+
+You can go to a specific location on a site by typing a forward slash after the site's key, followed by the location on the site you'd like to be redirected to. For example:
+
+* Entering `r/r/startpages` would redirect you to [www.reddit.com/r/startpages](https://www.reddit.com/r/startpages)
+* Entering `h/popular` would redirect you to [hypem.com/popular](http://hypem.com/popular).
+
+### URL Redirects
+
+If you enter in a full domain or URL, you will be redirected to said domain or URL. For example:
+
+* Entering `stallman.org` would redirect you to [stallman.org](https://stallman.org/).
+* Entering `https://smile.amazon.com` would redirect you to [smile.amazon.com](https://smile.amazon.com/).
+
+## Configuration
+
+The above is just the beginning. Open up the Preferences to configure fully!
+
+To import your configuration from Tilde, type the following into the console of your Tilde page:
+
+`document.body.appendChild(document.createElement('textarea')).value = JSON.stringify(CONFIG);`
+
+Then copy the JSON from the textarea into this extension's Preferences panel.
+
+## License
+
+Feel free to use this and modify it however you like.
 
 License
 -------
 
-This project is licensed under the **MIT License**, see [LICENSE_MIT.txt](LICENSE_MIT.txt) for details.
+This project is licensed under the **MIT License**, see [LICENSE](LICENSE) for details.
 
 
-Changelog
----------
 
-### Version 1.22 - October 15, 2017
 
-- Firefox support
-
-### Version 1.21 - November 20, 2016
-
-- Added HiDPI icons
-- Fixed export settings not selectable
-
-### Version 1.20 - June 1, 2016
-
-- Added import/export settings
-- Fixed recently closed max items
-
-### Version 1.19 - April 14, 2016
-
-- Fixed weather not updating
-
-### Version 1.18 - April 3, 2016
-
-- Removed geolocation
-- Fixed weather error
-
-### Version 1.17 - January 24, 2016
-
-- Fixed weather error
-
-### Version 1.16 - August 29, 2014
-
-- Added other devices folder
-- Recently closed tabs preserve history
-- Removed background process
-- Chrome version 37 or later required
-
-### Version 1.15 - July 6, 2014
-
-- Fixed freezing issues
-
-### Version 1.14 - May 11, 2014
-
-- Reduced memory usage
-- Added option to set number of items for recently closed, recent bookmarks, and most visited
-- Added option for background image size
-- Added link to bookmark manager in folder context menu
-
-### Version 1.12 - August 18, 2013
-
-- Reorder apps via drag and drop
-
-### Version 1.11 - August 3, 2013
-
-- Fixed launching packaged apps (Google Keep)
-- Fixed launching file:/// and chrome:// URLs
-- Fixed Mobile Bookmarks folder not being removable
-- Disable weather if geolocation is denied
-- Default layout changed to 2 columns
-- Uninstall apps from the context menu
-- Hide Google Wallet Service from apps
-
-### Version 1.9 - December 30, 2012
-
-- Uses geolocation for weather by default
-- Fixed bug with drag and drop
-- Added Chrome Web Store to apps
-
-### Version 1.8 - November 9, 2012
-
-- Redesigned options panel
-- Added several new settings
-- Performance tweaks
-- Source code released under the MIT license
-
-### Version 1.7 - September 8, 2012
-
-- Added custom CSS field for advanced users
-- Added option to hide Bookmarks bar and Other bookmarks
-
-### Version 1.6 - August 30, 2012
-
-- Added option to open links in new tabs
-- Support local file for background image
-- Weather errors fixed
-
-### Version 1.5 - August 29, 2012
-
-- Weather forecast now uses Yahoo
-- System font list enabled on supported versions
-
-### Version 1.4 - August 10, 2012
-
-- Added option to disable the weather and other special folders
-- Minor bug fixes
-
-### Version 1.3 - August 9, 2012
-
-- Fixed error on old Chrome versions
-
-### Version 1.2 - August 8, 2012
-
-- Added apps, most visited, recently closed, and weather
-- More flexible layout with unlimited columns
-- Open all links in folder from context menu
-- Color themes and new default style
-- Added smooth animation and highlight shadow
-- Drag and drop to reorder folders and columns
-- Background image support
-- Bug fixes
-- New name (formerly New Tab + Bookmark Tree)
-
-### Version 1.1 - July 20, 2011
-
-- Added options menu
-
-### Version 1.0 - July 17, 2011
-
-- Initial release
