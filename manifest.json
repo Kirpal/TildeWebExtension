@@ -1,38 +1,21 @@
 {
-	"name": "Humble New Tab Page",
-	"version": "1.22",
+	"name": "Tilde",
+	"version": "6.1.0",
 	"minimum_chrome_version": "37",
 	"manifest_version": 2,
-	"description": "Redesigned new tab page featuring your bookmarks, apps, most visited, recently closed, and weather in a custom layout.",
+	"description": "Functional and sexy minimal browser startpage.",
 	"icons": {
 		"128": "icon_128.png",
 		 "48": "icon_48.png",
 		 "16": "icon_16.png"
 	},
-	"permissions": [
-		"bookmarks",
-		"chrome://favicon/",
-		"topSites",
-		"management",
-		"tabs",
-		"fontSettings",
-		"sessions"
-	],
+	"permissions": ["storage"],
 	"chrome_url_overrides":
 	{
 		"newtab": "newtab.html"
 	},
-	"background" : {
-		"scripts" : ["background.js"],
-		"persistent" : true
-	},
-	"options_page": "newtab.html#options",
 	"options_ui": {
-		"page": "newtab.html#options",
-		"chrome_style": false,
-		"open_in_tab": true
+		"page": "options.html"
 	},
-	"web_accessible_resources": [
-		"newtab.html"
-	]
+	"content_security_policy": "script-src 'self' https://duckduckgo.com/; object-src 'self'"
 }
